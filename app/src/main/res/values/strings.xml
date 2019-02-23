@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Week 4 Code Challenges</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="from_magda">From Magda</string>
+    <string name="wishing">Have yourself a merry little Christmas,\nLet your heart be light\nFrom now on our troubles will be out of sight</string>
+    <string name="let_it_snow">LET IT SNOW</string>
+    <string name="gingles_bells">GINGLES BELLS</string>
+    <string name="holiday_2017">Holiday 2017</string>
+    <string name="fall_2017">Fall 2017</string>
+    <string name="winter_2017">Winter 2017</string>
+    <string name="spring_2018">Spring 2018</string>
+    <string name="summer_2018">Summer 2018</string>
+    <string name="islands">Islands</string>
+    <string name="rome">Rome</string>
+    <string name="london">London</string>
+    <string name="paris">Paris</string>
+    <string name="san_francisco">San Francisco</string>
+    <string name="bucharest">Bucharest</string>
+</resources>

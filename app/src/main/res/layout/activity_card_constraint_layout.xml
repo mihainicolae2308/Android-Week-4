@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardConstraintLayoutActivity">
+
+    <ImageView
+        android:id="@+id/image_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:srcCompat="@drawable/header_image" />
+
+    <ImageView
+        android:id="@+id/image_view_poster"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_header"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_header"
+        app:layout_constraintWidth_percent="0.3"
+        app:srcCompat="@drawable/poster_sparkling" />
+
+    <TextView
+        android:id="@+id/text_view_happy_holidays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:text="@string/happy_holidays"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/image_view_poster"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_header" />
+
+    <TextView
+        android:id="@+id/text_view_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp8"
+        android:text="@string/from_magda"
+        app:layout_constraintStart_toEndOf="@+id/image_view_poster"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_happy_holidays" />
+
+    <ImageView
+        android:id="@+id/image_view_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_header"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <TextView
+        android:id="@+id/text_view_wishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:text="@string/wishing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_poster" />
+
+    <Button
+        android:id="@+id/button_snow"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@color/colorAccent"
+        android:text="@string/let_it_snow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_wishes"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/button_bells"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@color/colorAccent"
+        android:text="@string/gingles_bells"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_snow"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_wishes"
+        app:layout_constraintWidth_percent="0.45" />
+
+</android.support.constraint.ConstraintLayout>
